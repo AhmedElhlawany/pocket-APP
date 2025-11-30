@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+/* navbar */
+.lang-btn{
+  background-color: #F4F4F4;
+  border-radius: 24px;
+  border: 1px solid #E5E5E5;
+  padding: 10px 20px;
+}
+/* hero  section */
+.hero-header{
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-info{
+    font-size: 20px;
+   width: 594px;
+    padding-right: 20px;    
+    color: #464646;
+}
+
+.phone-img{
+    top: -20px;
+    width: 45%;
+}
+.decorative{
+  top: 100px;
+  right: 260px;
+  width: 50px;
+  height: 50px;
+  transform: rotateZ(-10deg);
+}
+.decorative1{
+  top: 130px;
+  right: 240px;
+  width: 50px;
+  height: 50px;
+  transform: rotateZ(-10deg);
+}
+/* whatsapp effect */
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 12px 16px;
+  border-radius: 53px;
+  width: 350px;
+  border: 1px solid #e5e5e5;
+}
+
+.icon {
+  width: 42px;
+    height: 42px;
+  margin-right: 10px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#success-message {
+  margin-top: 20px;
+}
+
+.bubble {
+  background: #dff1ff;
+  padding: 14px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 15px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* features */
+
+.feature-item{
+    width: 30%;
+    border: #fff 5px solid;
+    background-image: linear-gradient( to right, #F5F5F5, #EFEDED );
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.feature-img{
+    width: 48px;
+    height: 48px;
+}
+
+/* steps */
+.step{
+width: 25%;
+ border: #fff 5px solid;
+    background-image: linear-gradient( to right, #F5F5F5, #EFEDED );
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.steps div img{
+  margin: auto;
+  display: block;
+    width: 100%;
+    /* height: 180px; */
+    /* object-fit: contain; */
+}
+.step1{
+  transform: rotateZ(-10deg);
+  margin-top: 20px;
+}
+.step3{
+  transform: rotateZ(10deg);
+  margin-top: 20px;
+}
+.step3 img{
+  transform: rotateZ(-5deg);
+  /* width: 150%!important; */
+ 
+
+}
+.step-footer{
+  width: 100%!important;
+  position: absolute;
+  bottom: 15px;
+}
+.arrow1,.arrow2{
+  width: 80px;
+  height: 80px;
+  margin: auto;
+
+}
+
+/* faqs */
+
+.faq-item{
+width: 32%;
+ border: #fff 5px solid;
+    background-image: linear-gradient( to right, #F5F5F5, #EFEDED );
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+/* try */
+.try{
+  padding-bottom: 100px;
+}
+/* footer */
+footer{
+  /* border-radius:25% 25% 0 0; */
+  position: relative;
+  background-color: #292929;
+  width: 100%;
+  /* overflow-x: hidden; */
+  
+
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    height: 100px; 
+    background-color: #292929; 
+    border-radius: 50% 50% 0 0  / 100px 100px 0 0 ; 
+    transform: translateY(-90%); 
+    z-index: 2;
+}
+
+footer a{
+    color: #DCDCDC;
+    text-decoration: none;
+}
+.footer-logo{
+    width: 100px;
+}
+
+/* responsive */
+/* --- Mobile Responsiveness (Screen size less than 768px) --- */
+@media (max-width: 520px) {
+    
+    /* Global Section Header & Text adjustments */
+    .hero-header {
+        font-size: 40px; /* Smaller header on mobile */
+    }
+    .hero-info {
+        width: 100%; /* Full width */
+        font-size: 16px;
+    }
+    .phone-img {
+        top: 70vh; /* Hide the large phone image on mobile */
+        width: 100%;
+    }
+    .hero-section{
+      height: 150vh;
+      text-align: center;
+    }
+    .decorative, .decorative1 {
+        display: none; /* Hide decorative elements */
+    }
+
+    /* Features Section Adjustment */
+    .feature-item {
+        width: 100%; /* Each feature takes full width */
+        margin-bottom: 15px;
+    }
+    .f2,.f3{
+width: 45%;
+    }
+    
+    /* Steps Section Adjustment */
+    .steps {
+        flex-direction: column; /* Stack steps vertically */
+        padding-left: 40px;
+       position: relative;
+    }
+
+    .step {
+        width: 70%; /* Make steps take up more mobile width */
+        margin-top: 10px !important;
+        height: 300px;
+    }
+    .step1{
+margin-left: 20px;
+transform: rotate(-10deg);   }
+    .step2{
+      margin-left: auto;
+      transform: rotate(10deg);
+    }
+    .step3{
+      margin-left: 20px;
+      transform: rotate(-10deg);
+    }
+    .steps div img {
+        height: auto; /* Allow image height to adjust */
+    }
+
+    .arrow1 {
+     position: absolute;
+     top: 150px;
+     right: 10px;
+     transform: rotate(90deg);
+    }
+
+    .arrow2 {
+        position: absolute;
+        top: 500px;
+        left: 50px;
+        transform: rotateX(-180deg)  rotate(-130deg) ;
+    }
+    
+    /* FAQ Section Adjustment */
+    .faq-item {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 15px;
+    }
+    
+    /* Footer Responsiveness */
+    
+    /* Stack the main footer content */
+    .container.d-flex.py-5 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        text-align: center;
+        padding-top: 0 !important;
+    }
+
+    .footer-logo {
+        margin-bottom: 25px; /* Add space below logo */
+    }
+
+    .px-5, .ps-5 {
+        padding: 0 0 25px 0 !important; /* Remove excessive horizontal padding, add bottom space */
+        width: 100%;
+    }
+
+    /* Center the Get in Touch content */
+    .ps-5 div {
+        justify-content: center;
+    }
+
+    .text-center {
+        margin-top: 10px;
+    }
+}
