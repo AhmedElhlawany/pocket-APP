@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
     /* overflow-x: hidden; */
 }
-body{
+body , html{
     overflow-x: hidden;
 }
 /* navbar */
@@ -201,7 +201,9 @@ footer a{
 /* responsive */
 /* --- Mobile Responsiveness (Screen size less than 768px) --- */
 @media (max-width: 480px) {
-    
+    body{
+      overflow-x: hidden;
+    }
     /* Global Section Header & Text adjustments */
     .hero-header {
         font-size: 40px; /* Smaller header on mobile */
@@ -305,4 +307,5 @@ transform: rotate(-10deg);   }
     .text-center {
         margin-top: 10px;
     }
+   
 }
