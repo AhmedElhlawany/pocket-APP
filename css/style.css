@@ -200,7 +200,7 @@ footer a{
 
 /* responsive */
 /* --- Mobile Responsiveness (Screen size less than 768px) --- */
-@media (max-width: 520px) {
+@media (max-width: 480px) {
     
     /* Global Section Header & Text adjustments */
     .hero-header {
