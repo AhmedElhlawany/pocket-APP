@@ -200,7 +200,7 @@ footer a{
 
 /* responsive */
 /* --- Mobile Responsiveness (Screen size less than 768px) --- */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     body{
       overflow-x: hidden;
     }
@@ -223,7 +223,13 @@ footer a{
     .decorative, .decorative1 {
         display: none; /* Hide decorative elements */
     }
-
+.input-container{
+  width: 80%;
+}
+#success-message{
+  width: 80%;
+  margin: auto;
+}
     /* Features Section Adjustment */
     .feature-item {
         width: 100%; /* Each feature takes full width */
