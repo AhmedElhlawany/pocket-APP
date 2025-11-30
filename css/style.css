@@ -200,7 +200,7 @@ footer a{
 
 /* responsive */
 /* --- Mobile Responsiveness (Screen size less than 768px) --- */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     body{
       overflow-x: hidden;
     }
